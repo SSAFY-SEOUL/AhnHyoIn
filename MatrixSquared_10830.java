@@ -1,4 +1,3 @@
-//틀림
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.BufferedWriter;
@@ -77,7 +76,7 @@ public class MatrixSquared_10830 {
 				int tmp = 0;
 				for(int idx=0; idx<N; idx++) {
 					tmp += row[idx] * col[idx];
-					result[i][j] = tmp;
+					result[i][j] = tmp % 1000;
 				}
 			}//for j
 		}//for i
@@ -99,7 +98,7 @@ public class MatrixSquared_10830 {
 					int tmp = 0;
 					for(int idx=0; idx<N; idx++) {
 						tmp += row[idx] * col[idx];
-						result[i][j] = tmp;
+						result[i][j] = tmp % 1000;
 					}
 				}//for j
 			}//for i
